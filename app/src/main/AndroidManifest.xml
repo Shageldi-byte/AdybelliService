@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.android.adybelliservice">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".Application"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AdybelliStore"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon,android:theme,android:allowBackup"
+        tools:targetApi="s"
+
+        >
+
+        <!--    TR Stock    -->
+        <activity
+            android:name=".TrStockApplication.Activity.BoxView"
+            android:exported="false" />
+        <activity
+            android:name=".TrStockApplication.Activity.TrStockMain"
+            android:exported="true" />
+        <activity
+            android:name=".TrStockApplication.Activity.Login"
+            android:exported="true" />
+
+        <!--    Main APP    -->
+        <activity
+            android:name=".MainApp"
+            android:exported="false" />
+        <activity
+            android:name=".MainLogin"
+            android:exported="true"
+            android:theme="@style/Theme.MainApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Store section -->
+        <activity
+            android:name=".StoreApplication.Activity.LoginActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".StoreApplication.Activity.QRScanner"
+            android:exported="true" />
+        <activity
+            android:name=".StoreApplication.Activity.FilterActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".StoreApplication.Activity.SelectCategoryActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".StoreApplication.Activity.MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+
+        <receiver
+            android:name=".StoreApplication.Widget.WidgetProvider"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/store_widget_info" />
+        </receiver>
+
+        <!-- Courier section -->
+        <activity
+            android:name=".CourierApplication.Activity.OfflineToOnline"
+            android:exported="false" />
+        <activity android:name=".CourierApplication.Activity.MoreInfo" />
+        <activity
+            android:name=".CourierApplication.Activity.Container"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".CourierApplication.Activity.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- Office app -->
+        <activity
+            android:name=".OfficeApplication.Activity.QRScanner"
+            android:exported="false" />
+        <activity
+            android:name=".OfficeApplication.Activity.SeeProducts"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".OfficeApplication.Activity.NoInternet" />
+        <activity android:name=".OfficeApplication.Activity.SplashScreen" />
+        <activity
+            android:name=".OfficeApplication.Activity.Login"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".OfficeApplication.Activity.SetCourier"
+            android:exported="true" />
+        <activity
+            android:name=".OfficeApplication.Activity.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- SMS app -->
+        <activity
+            android:name=".SmsApplication.Activity.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SmsApplication.Activity.Settings"
+            android:exported="true" />
+    </application>
+
+</manifest>

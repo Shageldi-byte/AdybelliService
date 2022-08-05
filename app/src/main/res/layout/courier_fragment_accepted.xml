@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/courier_background"
+    tools:context=".Fragment.Accepted">
+
+   <LinearLayout
+       android:id="@+id/top"
+       android:orientation="vertical"
+       android:background="@color/white"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/courier_background"
+           android:padding="14dp"
+           android:layout_margin="16dp"
+           android:hint="Gözleg (Nomer ýa-da zakaz kody)"
+           android:textColorHint="@color/passive_color"
+           android:textSize="14sp"
+           android:inputType="text"
+           android:drawableStart="@drawable/courier_ic_baseline_search_24"
+           android:drawableTint="@color/passive_color"
+           android:drawablePadding="6dp"
+           android:backgroundTint="@color/blue_shade"
+           />
+
+       <HorizontalScrollView
+           android:visibility="gone"
+           android:scrollbars="none"
+           android:layout_marginBottom="12dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <LinearLayout
+               android:orientation="horizontal"
+               android:id="@+id/items"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+
+
+
+           </LinearLayout>
+       </HorizontalScrollView>
+   </LinearLayout>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_marginTop="6dp"
+        android:layout_below="@id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+</RelativeLayout>

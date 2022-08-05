@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <com.android.adybelliservice.StoreApplication.View.AppTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/sort_word"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:tvFont="medium"
+        />
+
+    <LinearLayout
+        android:id="@+id/radioGroup"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/firstSort"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.android.adybelliservice.StoreApplication.View.AppTextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/default_sort"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:tvFont="regular"
+                android:labelFor="@id/price_asc"
+                android:padding="12dp"
+                />
+            <RadioButton
+                android:checked="true"
+                android:button="@drawable/store_radio_button"
+                android:id="@+id/price_asc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/passive_color"
+            />
+
+        <LinearLayout
+            android:id="@+id/secondSort"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.android.adybelliservice.StoreApplication.View.AppTextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/cost_asc"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:tvFont="regular"
+                android:labelFor="@id/price_desc"
+                android:padding="12dp"
+                />
+            <RadioButton
+                android:button="@drawable/store_radio_button"
+                android:id="@+id/price_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/passive_color"
+            />
+
+        <LinearLayout
+            android:id="@+id/thirdSort"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.android.adybelliservice.StoreApplication.View.AppTextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/cost_desc"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:tvFont="regular"
+                android:labelFor="@id/newSort"
+                android:padding="12dp"
+                />
+            <RadioButton
+                android:button="@drawable/store_radio_button"
+                android:id="@+id/newSort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

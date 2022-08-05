@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.Product.Products">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/contaoner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        app:elevation="0dp"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="@android:color/transparent"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:title="@string/app_name">
+
+            <!--We are adding the image that we have added earlier
+                  in the drawable folder.The attribute app:layout_collapseMode="parallax"
+                  causes the image to move when user scrolls at a specific ratio. -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_collapseMode="parallax"
+                android:orientation="vertical"
+                >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/passive_color"
+                    />
+                <LinearLayout
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/sort"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sort"
+                        app:icon="@drawable/store_ic_sort"
+                        android:textColor="@color/passive_color4"
+                        app:iconTint="@color/passive_color4"
+                        app:iconGravity="textStart"
+                        app:rippleColor="@color/passive_color"
+                        android:textAllCaps="false"
+                        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                        />
+                    <View
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:background="@color/passive_color"
+                        />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/filter"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/filter"
+                        app:icon="@drawable/store_filter"
+                        app:iconGravity="end"
+                        android:textAllCaps="false"
+                        android:textColor="@color/passive_color4"
+                        app:iconTint="@color/passive_color4"
+                        app:rippleColor="@color/passive_color"
+                        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefresh"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/productsAdapter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loading"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:lottie_rawRes="@raw/store_loading"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+    <include
+        layout="@layout/store_empty"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        />
+</RelativeLayout>

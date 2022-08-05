@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialog_height">450dp</dimen>
+    <dimen name="order_product_width">60dp</dimen>
+    <dimen name="order_product_height">110dp</dimen>
+    <dimen name="text_size">14sp</dimen>
+    <dimen name="main_card">60dp</dimen>
+</resources>

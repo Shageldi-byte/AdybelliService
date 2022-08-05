@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">Adybelli Service</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="accepted">Kabul edilenler</string>
+    <string name="pending">Garaşylýar</string>
+    <string name="canceled">Inkär edilenler</string>
+    <string name="products">Harytlar</string>
+    <string name="add_product">Haryt goşmak</string>
+    <string name="profile">Profil</string>
+    <string name="content" translatable="false">With the idea of imparting programming
+      knowledge, Mr. Sandeep Jain, an IIT Roorkee alumnus started a
+      dream, GeeksforGeeks. Whether programming excites you or you feel
+      stifled, wondering how to prepare for interview questions or how to
+      ace data structures and algorithms, GeeksforGeeks is a one-stop solution.
+      With every tick of time, we are adding arrows in our quiver. From articles
+      on various computer science subjects to programming problems for practice,
+      from basic to premium courses, from technologies to entrance examinations,
+      we have been building ample content with superior quality. In a short span,
+      we have built a community of 1 Million+ Geeks around the world, 20,000+
+      Contributors and 500+ Campus Ambassadors in various colleges across the nation.
+      Our success stories include a lot of students who benefitted in their placements
+      and landed jobs at tech giants. Our vision is to build a gigantic network of
+      geeks and we are only a fraction of it yet.
+  </string>
+    <string name="remove">Aýyrmak</string>
+    <string name="sort">Sort</string>
+    <string name="sort_word">Tertiplemek</string>
+    <string name="sort1">Arzandan gymmada</string>
+    <string name="sort2">Gymmatdan arzana</string>
+    <string name="sort3">Köneden täze</string>
+    <string name="sort4">Täzeden köne</string>
+    <string name="sort5">Gizlenen harytlar</string>
+    <string name="filter">Filter</string>
+    <string name="accept">Kabul dildi</string>
+    <string name="edit">Düzetmek</string>
+    <string name="logout">Ulgamdan çykmak?</string>
+    <string name="logout_message">Ulgamdan çykmak isleýärsiňizmi?</string>
+    <string name="cancel">Ýatyrmak</string>
+    <string name="ok">Hawa</string>
+    <string name="removeTitle">Pozmak?</string>
+    <string name="removeMessage">Hakykatdanam pozmakçymy?</string>
+    <string name="discount_products">Arzanladyşlar</string>
+    <!--  Add product  -->
+    <string name="product_name">Harydyň ady</string>
+    <string name="price">Baha</string>
+    <string name="discount_price">Skidka baha</string>
+    <string name="about_product">Haryt barada</string>
+    <string name="brand">Brend</string>
+    <string name="size">Ölçeg</string>
+    <string name="color">Reňk</string>
+    <string name="count">Sany</string>
+    <string name="additional_information">Goşmaça maglumat</string>
+    <string name="add_additional_info">Goşmaça</string>
+    <string name="description">Düşündirişi</string>
+    <string name="add_image">Surat goşmak</string>
+    <string name="to_add_image">Surat goş</string>
+    <string name="set_permission">Ähli rugsatlary sazlamalardan tassyklaň!</string>
+    <string name="category">Kategoriya</string>
+    <string name="search">Gözleg</string>
+    <string name="language">Dil</string>
+    <string name="logout_label">Ulgamdan çyk</string>
+    <string name="tm">Türkmen dili</string>
+    <string name="ru">Русский язык</string>
+    <string name="theme">Garaňky tema</string>
+    <string name="login">Ulgama girmek</string>
+    <string name="username">Ulanyjy ady</string>
+    <string name="password">Açar sözi</string>
+
+    <string name="no_product">Haryt ýok</string>
+    <string name="has_product">Haryt bar</string>
+    <string name="razmer">Razmer:</string>
+    <string name="orders">Sargytlar</string>
+    <string name="about_tm">Haryt barada TM</string>
+    <string name="about_ru">Haryt barada RU</string>
+    <string name="sizes">Ölçegler</string>
+    <string name="total_price">Jemi Bahasy:</string>
+    <string name="total_info">Doly maglumat</string>
+    <string name="order_id">Sargyt ID:</string>
+    <string name="pending_status">Garaşylýar</string>
+    <string name="accepted_status">Kabul edildi</string>
+    <string name="rejeted_status">Kabul edilmedi</string>
+    <string name="canceled_status">Ýatyryldy</string>
+    <string name="fill_out">Maglumatlary doly girizin!</string>
+    <string name="something_went_wrong">Ýalňyşlyk ýüze çykdy!</string>
+    <string name="cant_get">Maglumatlary ýükläp bomady!</string>
+    <string name="try_again">Gaýtadan barla</string>
+    <string name="attention">ÜNS BERIŇ!</string>
+    <string name="no_data">Maglumat ýok</string>
+    <string name="add_additional_info_must">Goşmaça maglumatlary doly giriziň!</string>
+    <string name="add_size_must">Ölçegleri doly giriziň!</string>
+    <string name="select_must_category">Kategoriýasyny saýlaň</string>
+    <string name="must_name">Harydyň adyny giriziň</string>
+    <string name="must_images">Suratlary saýlaň</string>
+    <string name="must_price">Bahasyny giriziň</string>
+    <string name="product_name_ru">Haryt ady rusca</string>
+    <string name="adding_product">Haryt goşulýar...</string>
+    <string name="successfully">Üsütünlikli hasaba alyndy!</string>
+    <string name="product_success">Harydyňyz üstünlikli goşuldy!</string>
+
+    <string name="cash_on_door">Gapyda nagt töleg</string>
+    <string name="terminal_on_door">Gapyda terminal</string>
+    <string name="online_buy">Online töleg</string>
+
+    <string name="on_the_way">Ýolda</string>
+    <string name="received">Eltip berildi</string>
+    <string name="please_wait">Biraz garasyn...</string>
+
+    <string name="order_time">Sargyt wagty:</string>
+    <string name="product_count">Haryt sany:</string>
+    <string name="pay">Töleg</string>
+    <string name="total_price_of_products">Harytlaryň jemi bahasy :</string>
+    <string name="order_shipping_price">Eltip bermek hyzmaty :</string>
+    <string name="more_info">Sargytlar giňişleýin</string>
+    <string name="barcode">Barcode</string>
+    <string name="clear">Arassala</string>
+    <string name="search_title">Gozleg...</string>
+    <string name="colour">Renk</string>
+    <string name="cost_">Baha</string>
+    <string name="to_filter">Filterle</string>
+    <string name="brands">Markalar</string>
+    <string name="size__">Razmer</string>
+
+    <string name="default_sort">Başdaky ýagdaý</string>
+    <string name="cost_asc">Baha artan</string>
+    <string name="cost_desc">Baha kemelen</string>
+    <string name="update">Täzele</string>
+
+</resources>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/store_bottom_round"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.android.adybelliservice.StoreApplication.View.AppTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Adybelli store"
+                android:textColor="@color/always_white"
+                android:textSize="24sp"
+                app:tvFont="medium" />
+
+            <com.android.adybelliservice.StoreApplication.View.AppTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="+99361234567"
+                android:textColor="@color/always_white"
+                android:textSize="18sp"
+                app:tvFont="regular" />
+
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/m_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="16dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:background="@drawable/store_custom_bordered_ripple"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="22dp"
+                android:paddingTop="22dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.android.adybelliservice.StoreApplication.View.AppTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/accepted"
+                        android:textColor="@color/hint"
+                        android:textSize="12sp"
+                        app:tvFont="regular" />
+
+                    <com.android.adybelliservice.StoreApplication.View.AppTextView
+                        android:id="@+id/count_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:tvFont="medium" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@color/border_color" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.android.adybelliservice.StoreApplication.View.AppTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pending"
+                        android:textColor="@color/hint"
+                        android:textSize="12sp"
+                        app:tvFont="regular" />
+
+                    <com.android.adybelliservice.StoreApplication.View.AppTextView
+                        android:id="@+id/count_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:tvFont="medium" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@color/border_color" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.android.adybelliservice.StoreApplication.View.AppTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/canceled"
+                        android:textColor="@color/hint"
+                        android:textSize="12sp"
+                        app:tvFont="regular" />
+
+                    <com.android.adybelliservice.StoreApplication.View.AppTextView
+                        android:id="@+id/count_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:tvFont="medium" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:id="@+id/my_products"
+            android:padding="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.android.adybelliservice.StoreApplication.View.AppTextView
+                android:id="@+id/title_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableEnd="@drawable/store_ic_more"
+                android:text="@string/products"
+                app:tvFont="medium"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:drawableTint="@color/hint"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lang"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.android.adybelliservice.StoreApplication.View.AppTextView
+                android:id="@+id/title_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/language"
+                app:tvFont="medium"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+            <com.android.adybelliservice.StoreApplication.View.AppTextView
+                android:id="@+id/langTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tm"
+                app:tvFont="medium"
+                android:textSize="12sp"
+                android:layout_marginEnd="12dp"
+                android:textColor="@color/hint"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/store_ic_more"
+                app:tint="@color/hint" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:clickable="true"
+            android:visibility="gone"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.android.adybelliservice.StoreApplication.View.AppTextView
+                android:id="@+id/title_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/theme"
+                app:tvFont="medium"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                app:track="@drawable/store_thumb"
+                android:thumb="@drawable/store_thumb2"
+                android:checked="true"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/logout"
+            android:layout_marginTop="4dp"
+            android:padding="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.android.adybelliservice.StoreApplication.View.AppTextView
+                android:id="@+id/title_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableEnd="@drawable/store_ic_more"
+                android:text="@string/logout_label"
+                app:tvFont="medium"
+                android:textSize="16sp"
+                android:drawableTint="@color/hint"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

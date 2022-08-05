@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".Activity.MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="50dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sms_ic_baseline_rotate_left_24"
+            app:tint="@color/second" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Connecting..."
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+   <androidx.cardview.widget.CardView
+       android:id="@+id/settingsButton"
+       android:layout_marginEnd="16dp"
+       android:layout_marginBottom="60dp"
+       android:layout_alignParentEnd="true"
+       android:layout_alignParentBottom="true"
+       app:cardBackgroundColor="@color/second"
+       app:cardCornerRadius="12dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:padding="12dp"
+           android:gravity="center_vertical"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:id="@+id/settings"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Change host"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+               android:textStyle="bold"
+               android:gravity="center"
+               android:drawablePadding="6dp"
+               app:drawableStartCompat="@drawable/sms_ic_baseline_edit_24"
+               app:drawableTint="@color/black" />
+
+       </LinearLayout>
+   </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

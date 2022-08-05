@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ofis_ic_baseline_edit_location_24"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="22dp"
+        app:tint="@color/second" />
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:inputType="text|textMultiLine"
+        android:layout_margin="12dp"
+        android:padding="12dp"
+        android:background="@drawable/ofis_border"
+        android:hint="Adres girizin..."
+        android:gravity="top"/>
+
+    <LinearLayout
+        android:layout_margin="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            />
+        <Button
+            android:id="@+id/save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/second"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            />
+    </LinearLayout>
+
+</LinearLayout>

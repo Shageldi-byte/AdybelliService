@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:strokeWidth="0.5dp"
+    app:strokeColor="@color/always_black"
+    android:layout_margin="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <LinearLayout
+                android:padding="6dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/image"
+                    app:riv_corner_radius="12dp"
+                    android:scaleType="centerCrop"
+                    android:layout_width="80dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_height="150dp"/>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.android.adybelliservice.StoreApplication.View.AppTextView
+                        android:id="@+id/orderId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order id: 0"
+                        app:tvFont="bold"
+                        android:textColor="@color/always_black"
+                        />
+
+                    <com.android.adybelliservice.StoreApplication.View.AppTextView
+                        android:id="@+id/name"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Name: 0"
+                        android:maxWidth="100dp"
+                        android:layout_marginTop="6dp"
+                        app:tvFont="regular"
+                        android:textSize="10sp"
+                        android:textColor="@color/always_black"
+                        />
+
+
+                    <com.android.adybelliservice.StoreApplication.View.AppTextView
+                        android:id="@+id/size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Size: 0"
+                        android:layout_marginTop="6dp"
+                        app:tvFont="regular"
+                        android:textSize="10sp"
+                        android:textColor="@color/always_black"
+                        />
+
+                    <com.android.adybelliservice.StoreApplication.View.AppTextView
+                        android:id="@+id/site"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Site: 0"
+                        android:layout_marginTop="6dp"
+                        app:tvFont="regular"
+                        android:textSize="10sp"
+                        android:textColor="@color/always_black"
+                        />
+
+                    <com.android.adybelliservice.StoreApplication.View.AppTextView
+                        android:id="@+id/product_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Product id: 0"
+                        android:layout_marginTop="6dp"
+                        app:tvFont="regular"
+                        android:textSize="10sp"
+                        android:textColor="@color/always_black"
+                        />
+
+                    <com.android.adybelliservice.StoreApplication.View.AppTextView
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Price: 0"
+                        android:layout_marginTop="6dp"
+                        app:tvFont="regular"
+                        android:textSize="10sp"
+                        android:textColor="@color/always_black"
+                        />
+
+                    <com.android.adybelliservice.StoreApplication.View.AppTextView
+                        android:id="@+id/cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cost price: 0"
+                        android:layout_marginTop="6dp"
+                        app:tvFont="regular"
+                        android:textSize="10sp"
+                        android:textColor="@color/always_black"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/always_white"
+                        app:backgroundTint="@color/error"
+                        android:text="Cancel"
+                        android:textAllCaps="false"
+                        android:textSize="12sp"
+                        />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/accept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/always_white"
+                        app:backgroundTint="@color/blue"
+                        android:text="Accept"
+                        android:textAllCaps="false"
+                        android:textSize="12sp"
+                        />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/gotoSite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/always_white"
+                        app:backgroundTint="@color/warning_stroke_color"
+                        android:text="Go site"
+                        android:textAllCaps="false"
+                        android:textSize="12sp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

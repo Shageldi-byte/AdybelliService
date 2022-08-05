@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="12dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_weight="1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_weight="1"
+        android:id="@+id/sizeContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/size"
+        app:hintTextColor="@color/hint"
+        app:boxBackgroundMode="filled"
+        app:boxStrokeColor="@color/background"
+        app:boxStrokeWidthFocused="0dp"
+        app:boxCollapsedPaddingTop="6dp"
+        android:textColorHint="@color/hint"
+        app:boxBackgroundColor="@color/background"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxStrokeWidth="0dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:textSize="12sp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/countContainer"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:hint="@string/count"
+        app:hintTextColor="@color/hint"
+        app:boxBackgroundMode="filled"
+        app:boxStrokeColor="@color/background"
+        app:boxStrokeWidthFocused="0dp"
+        app:boxCollapsedPaddingTop="6dp"
+        android:textColorHint="@color/hint"
+        app:boxBackgroundColor="@color/background"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxStrokeWidth="0dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:textSize="12sp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/barcodeContainer"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:hint="@string/barcode"
+        app:hintTextColor="@color/hint"
+        app:boxBackgroundMode="filled"
+        app:boxStrokeColor="@color/background"
+        app:boxStrokeWidthFocused="0dp"
+        app:boxCollapsedPaddingTop="6dp"
+        android:textColorHint="@color/hint"
+        app:boxBackgroundColor="@color/background"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxStrokeWidth="0dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/barcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:focusableInTouchMode="false"
+            android:textSize="12sp"
+            android:editable="false"
+            android:inputType="none"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/store_ic_baseline_remove_circle_24"
+        app:tint="@color/error"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        />
+</LinearLayout>

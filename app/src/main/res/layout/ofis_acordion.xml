@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/boxCode"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order code"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ofis_ic_baseline_keyboard_arrow_right_24"
+            app:tint="@color/black" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/black"
+        />
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/container"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <LinearLayout
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:id="@+id/cargo_date"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Cargo Date: "
+                  android:textColor="@color/black"
+                  android:drawableStart="@drawable/ofis_ic_baseline_date_range_24"
+                  android:gravity="center"
+                  android:drawablePadding="6dp"
+                  android:drawableTint="@color/black"
+                  />
+              <TextView
+                  android:id="@+id/box_info"
+                  android:visibility="gone"
+                  android:layout_marginTop="6dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="ID.Box Name"
+                  android:textColor="@color/black"
+                  android:drawableStart="@drawable/ofis_ic_baseline_date_range_24"
+                  android:gravity="center"
+                  android:drawablePadding="6dp"
+                  android:drawableTint="@color/black"
+                  />
+              <TextView
+                  android:id="@+id/truck"
+                  android:layout_marginTop="6dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Truck name: 48"
+                  android:textColor="@color/black"
+                  android:drawableStart="@drawable/ofis_ic_baseline_directions_car_24"
+                  android:gravity="center"
+                  android:drawablePadding="6dp"
+                  android:drawableTint="@color/black"
+                  />
+          </LinearLayout>
+
+
+
+      </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status: "
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/ofis_ic_baseline_check_box_24"
+            android:gravity="center"
+            android:drawablePadding="6dp"
+            android:drawableTint="@color/black"
+            />
+        <TextView
+            android:id="@+id/statusDetail"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status maglumatlar:"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/ofis_ic_baseline_check_box_24"
+            android:drawablePadding="6dp"
+            android:drawableTint="@color/black"
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/black"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

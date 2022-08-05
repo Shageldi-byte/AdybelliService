@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item0"
+        android:title="In truck"
+        android:icon="@drawable/ofis_ic_baseline_dashboard_24"/>
+
+    <item
+        android:id="@+id/item1"
+        android:title="Stock tm"
+        android:icon="@drawable/ofis_ic_baseline_inbox_24"/>
+
+    <item
+        android:id="@+id/item4"
+        android:title="On delivery"
+        android:icon="@drawable/ofis_ic_baseline_directions_car_24"/>
+
+    <item
+        android:id="@+id/item2"
+        android:title="Delivered"
+        android:icon="@drawable/ofis_ic_baseline_spellcheck_24"/>
+
+    <item
+        android:id="@+id/item3"
+        android:title="Canceled"
+        android:icon="@drawable/ofis_ic_baseline_cancel_24"/>
+
+</menu>

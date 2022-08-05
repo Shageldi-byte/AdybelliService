@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_color">#FF6B00</color>
+    <color name="black">#161616</color>
+    <color name="white">#FFFFFF</color>
+    <color name="passive_color">#EBEBEB</color>
+    <color name="passive_color2">#909090</color>
+    <color name="passive_color4">#A3ABB3</color>
+    <color name="passive_color3">#FAFAFA</color>
+    <color name="error">#FF0000</color>
+    <color name="always_white">#FFFFFF</color>
+    <color name="always_black">#161616</color>
+    <color name="success">#32A071</color>
+    <color name="red">#FF5A5A</color>
+    <color name="red_transparent">#29FF5A5A</color>
+    <color name="success_transparent">#2932A071</color>
+    <color name="border_color">#E5E5E5</color>
+    <color name="dangerous">#F51C1C</color>
+    <color name="gray_scale">#A3ABB3</color>
+    <color name="background">#F2F3F5</color>
+    <color name="hint">#A0A3BD</color>
+    <color name="skeleton">#E4E4E4</color>
+    <color name="skeletonColor">#51CFCFCF</color>
+    <color name="yellow">#FDAD00</color>
+
+
+    <!--  Courier color  -->
+    <color name="primary_color">#0762C8</color>
+    <color name="warning">#FBA13A</color>
+    <color name="sale">#FC185B</color>
+    <color name="blue_shade">#F4F8FB</color>
+    <color name="green">#00c49a</color>
+    <color name="blue">#266ed9</color>
+
+    <!--  Sms color  -->
+    <color name="primary">#10194E</color>
+    <color name="second">#1DC76B</color>
+    <color name="secondPress">#32E484</color>
+    <color name="accent">#D7C9C9</color>
+    <color name="inactive">#32192259</color>
+    <color name="sent">#FAAD39</color>
+    <color name="textColor">#858EC5</color>
+    <color name="blackTransParent">#00010A43</color>
+
+    <!--  Office app  -->
+    <color name="first">#fefee3</color>
+    <color name="third">#4c956c</color>
+    <color name="fourth">#ffc9b9</color>
+    <color name="fifth">#d68c45</color>
+</resources>

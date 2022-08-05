@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Main.Products">
+
+    <RelativeLayout
+        android:layout_margin="16dp"
+        android:padding="4dp"
+        android:id="@+id/tabCon"
+        android:background="@drawable/store_tab_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/viewpagertab"
+            android:overScrollMode="never"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabIndicator="@drawable/store_tab_indicator"
+            app:tabIndicatorGravity="stretch"
+            app:tabMode="fixed"
+            android:background="@android:color/transparent"
+            app:tabIndicatorAnimationMode="elastic"
+            app:tabSelectedTextColor="@color/always_white"
+            app:tabTextColor="@color/black"
+            style="@style/Widget.App.TabLayout"
+            >
+
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </RelativeLayout>
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabCon" />
+
+</RelativeLayout>

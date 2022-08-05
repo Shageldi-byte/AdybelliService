@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/container"
+    android:layout_marginTop="12dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/con1"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <com.android.adybelliservice.StoreApplication.View.AppTextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                app:tvFont="medium"
+                />
+
+
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/arrow"
+            android:layout_width="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="15dp"
+            android:src="@drawable/store_ic_baseline_check_24"
+            app:tint="@color/main_color" />
+
+        <ImageView
+            android:id="@+id/arrowAccordion"
+            android:layout_width="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="15dp"
+            android:src="@drawable/store_ic_baseline_arrow_back_ios_new_24"
+            android:rotation="180"
+            app:tint="@color/black" />
+
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/subs"
+        android:layout_below="@id/con1"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_below="@id/subs"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/passive_color"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        />
+</RelativeLayout>

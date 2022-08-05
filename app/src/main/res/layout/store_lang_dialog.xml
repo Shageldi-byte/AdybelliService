@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:padding="16dp">
+
+    <ImageButton
+        android:id="@+id/close"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/transparent"
+        android:padding="6dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/store_ic_close_circle"
+        app:tint="@color/black" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_below="@id/close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.android.adybelliservice.StoreApplication.View.AppTextView
+            android:id="@+id/tm"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="@string/tm"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:tvFont="regular"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            />
+
+        <View
+            android:id="@+id/line"
+            android:layout_below="@id/tm"
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:background="@color/hint"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            />
+
+        <com.android.adybelliservice.StoreApplication.View.AppTextView
+            android:id="@+id/ru"
+            android:padding="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line"
+            android:layout_marginTop="4dp"
+            android:text="@string/ru"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:tvFont="regular" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

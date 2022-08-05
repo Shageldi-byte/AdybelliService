@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/con"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+
+            />
+
+        <LinearLayout
+            android:layout_marginStart="12dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Detail ID: 1234"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:layout_marginTop="6dp"
+                />
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:layout_marginTop="6dp"
+                />
+            <TextView
+                android:id="@+id/size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Size"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:layout_marginTop="6dp"
+                />
+            <TextView
+                android:id="@+id/count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sany"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:layout_marginTop="6dp"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/editAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ofis_ic_baseline_edit_location_24"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        app:tint="#FF9800" />
+
+    <LinearLayout
+        android:id="@+id/secondCon"
+        android:layout_below="@id/con"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/setTmStock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/second"
+            android:text="Kuriere ber"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/notReceived"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:text="Kureierden ayyr"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="12dp"
+            />
+    </LinearLayout>
+    <View
+        android:layout_below="@+id/secondCon"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/black"
+        />
+
+</RelativeLayout>

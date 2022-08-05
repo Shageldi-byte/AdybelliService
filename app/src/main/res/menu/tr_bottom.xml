@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/received"
+        android:title="Received"
+        android:icon="@drawable/ic_baseline_check_circle_outline_24"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/box"
+        android:title="Box"
+        android:icon="@drawable/store_ic_box"
+        app:showAsAction="always"
+        />
+</menu>

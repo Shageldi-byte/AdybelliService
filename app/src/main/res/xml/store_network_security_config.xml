@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">api.adybelli.com</domain>
+        <domain includeSubdomains="true">cdn.adybelli.com</domain>
+        <domain includeSubdomains="true">45.90.33.134:6611</domain>
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </domain-config>
+</network-security-config>
